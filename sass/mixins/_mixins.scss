@@ -1,0 +1,49 @@
+/*mixins*/
+@mixin flex-layout-top-nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+}
+@mixin flex-layout-informations{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+     margin-left: 10%;
+}
+@mixin informations{
+    h4{
+         color:darken($color: #fff, $amount: 20%);
+         font-family: Calibri Light;
+      }
+    h2{
+        color:white;
+          font-family: calibri;
+          font-weight: lighter;
+      }
+    }
+
+@mixin navigation{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+@mixin home-anchor{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family: Calibri Light;
+    &:hover{
+        border-bottom: 3px solid rgb(169,214,250);
+        transition: 0.3s;
+    } 
+}
+
+
+@mixin font{
+    font-family: Calibri Light;
+}
+@mixin a-basics{
+    text-decoration: none;
+    font-family: Calibri Light;
+}

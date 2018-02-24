@@ -1,0 +1,64 @@
+body{
+    .post-body{
+        width:55%;
+        height: 800px;
+        margin-left:42%;
+        position: absolute;
+        top:43%;
+        background-color: white;
+        border:0px solid red;
+        &:hover{
+            background-color:darken($color: #fff, $amount: 2%);
+        }
+        .t-heading{
+            @include font;
+            height: 60px;
+            color: gray;
+            padding-left: 20px;
+            font-size: 16px;
+            border-bottom: 1px solid gray;
+        }
+        .text-post,.photo-post,.vedio-post{
+            height:100px;
+            border:0px solid red;
+            border-bottom: 1px solid gray;
+            .post-image{
+                height:100px;
+                width:100px;
+                float:left;
+                border:0px solid red;
+            }
+            .post-content{
+                width: 600px;
+                height: 100px;
+                float:left;
+                border:0px solid black;
+                 margin-left: 0%;
+                 p{
+                     .user-name{
+                         color:black;
+                         font-family: arial;
+                     }
+                     @include font;
+                     color:gray;
+                     .header-images,.header-images2 {
+                         margin-left: 15%;
+                         border:0px solid black;
+                     }
+                     .uber-facts{
+                         color:rgb(134,200,252);
+                         font-weight: bold;
+                     }
+                 }
+            }
+        }
+        .photo-post,.vedio-post{
+            height:300px;
+        }
+    }
+    iframe{
+        width:80%;
+        height:200px;
+
+    }
+}

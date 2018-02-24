@@ -1,0 +1,245 @@
+/*mixins*/
+/*variables*/
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #333333; }
+  body .main-header {
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    background-image: url("../images/twitter.jpg");
+    border: 0px solid black;
+    z-index: 1; }
+    body .main-header .main {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-color: #71868b;
+      border: 0px solid black; }
+      body .main-header .main .top-bar {
+        width: 100%;
+        height: 15%;
+        border: 0px solid forestgreen;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; }
+        body .main-header .main .top-bar div {
+          margin-left: 10px;
+          padding: 10px; }
+          body .main-header .main .top-bar div a img {
+            opacity: 0.6; }
+            body .main-header .main .top-bar div a img:hover {
+              opacity: 1; }
+        body .main-header .main .top-bar .bar {
+          margin-right: auto; }
+      body .main-header .main .profile-dp {
+        width: 40%;
+        height: 40%;
+        margin-left: 10%;
+        background-color: #71868b;
+        font-family: Calibri Light;
+        border: 0px solid black; }
+        body .main-header .main .profile-dp .profile-image {
+          width: 30%;
+          text-align: center;
+          float: left;
+          border: 0px solid black; }
+          body .main-header .main .profile-dp .profile-image img {
+            border-radius: 50%; }
+        body .main-header .main .profile-dp .profile-image-content {
+          float: left;
+          width: 50%;
+          margin-left: 10px;
+          border: 0px solid black; }
+          body .main-header .main .profile-dp .profile-image-content h4 {
+            color: #cccccc; }
+          body .main-header .main .profile-dp .profile-image-content h2 {
+            margin-top: -15px;
+            color: white; }
+      body .main-header .main .details {
+        width: 30%;
+        height: 100%;
+        float: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10%;
+        border: 0px solid black; }
+        body .main-header .main .details h4 {
+          color: #cccccc;
+          font-family: Calibri Light; }
+        body .main-header .main .details h2 {
+          color: white;
+          font-family: calibri;
+          font-weight: lighter; }
+      body .main-header .main .bottom-bar {
+        border: 0px solid black;
+        margin-top: 10px;
+        height: 40%;
+        width: 100%;
+        clear: both; }
+        body .main-header .main .bottom-bar .navBar {
+          float: left;
+          margin-left: 4%;
+          border: 0px solid black;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 60px; }
+          body .main-header .main .bottom-bar .navBar li:first-child {
+            margin-left: 0; }
+          body .main-header .main .bottom-bar .navBar li {
+            margin-top: 12%;
+            list-style: none;
+            margin-top: 0px;
+            padding: 6px;
+            margin-left: 40px; }
+            body .main-header .main .bottom-bar .navBar li a {
+              text-decoration: none;
+              color: white;
+              font-size: 20px;
+              font-family: Calibri Light; }
+              body .main-header .main .bottom-bar .navBar li a:hover {
+                border-bottom: 3px solid #a9d6fa;
+                transition: 0.3s; }
+          body .main-header .main .bottom-bar .navBar .home a:before {
+            content: url(../images/home.png);
+            display: inline-block;
+            margin-right: 10px; }
+          body .main-header .main .bottom-bar .navBar .notifications a:before {
+            content: url(../images/notifications.png);
+            display: inline-block;
+            margin-right: 10px; }
+          body .main-header .main .bottom-bar .navBar .discover a:before {
+            content: url(../images/discover.png);
+            display: inline-block;
+            margin-right: 10px; }
+          body .main-header .main .bottom-bar .navBar .me a:before {
+            content: url(../images/user.png);
+            display: inline-block;
+            margin-right: 10px; }
+
+/*side bar*/
+body .side-bar {
+  width: 40%;
+  height: 100%;
+  border: 0px solid black;
+  position: fixed;
+  top: 250px;
+  background-color: white;
+  box-shadow: 0px 0px 0px 2px  gray; }
+  body .side-bar .top-info {
+    text-align: center;
+    position: relative; }
+    body .side-bar .top-info h2 {
+      font-family: Calibri Light;
+      float: left;
+      margin-left: 10%; }
+    body .side-bar .top-info h4 {
+      float: left;
+      position: absolute;
+      width: 40%;
+      top: 10px;
+      right: 10%;
+      text-align: right;
+      border: 0px solid black; }
+      body .side-bar .top-info h4 a {
+        font-family: Calibri Light;
+        margin-left: 10%;
+        text-decoration: none;
+        font-family: Calibri Light; }
+  body .side-bar .upload-post {
+    width: 100%;
+    height: 100px;
+    margin-top: 10%;
+    border: 0px solid black; }
+    body .side-bar .upload-post .add-friends {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      border: 0px solid black; }
+      body .side-bar .upload-post .add-friends .add-btn {
+        width: 200px;
+        height: 80px;
+        border: 0px solid black;
+        margin-left: 25px; }
+        body .side-bar .upload-post .add-friends .add-btn .image1 {
+          margin: 10px 20% 10px 10%; }
+      body .side-bar .upload-post .add-friends > .add-image {
+        width: 300px;
+        height: 80px;
+        border: 0px solid black; }
+        body .side-bar .upload-post .add-friends > .add-image p .frnd-name {
+          font-family: Calibri Light;
+          font-weight: bold;
+          font-size: 22px; }
+        body .side-bar .upload-post .add-friends > .add-image p .followed {
+          color: gray;
+          font-family: Calibri Light;
+          font-size: 20px; }
+    body .side-bar .upload-post .gallery {
+      margin-left: 10%; }
+      body .side-bar .upload-post .gallery h2 {
+        font-family: Calibri Light; }
+      body .side-bar .upload-post .gallery .gallery-images {
+        border: 0px solid black;
+        width: 100%;
+        height: 200px; }
+        body .side-bar .upload-post .gallery .gallery-images img {
+          margin-left: 20%;
+          border: 0px solid gray; }
+
+body .post-body {
+  width: 55%;
+  height: 800px;
+  margin-left: 42%;
+  position: absolute;
+  top: 43%;
+  background-color: white;
+  border: 0px solid red; }
+  body .post-body:hover {
+    background-color: #fafafa; }
+  body .post-body .t-heading {
+    font-family: Calibri Light;
+    height: 60px;
+    color: gray;
+    padding-left: 20px;
+    font-size: 16px;
+    border-bottom: 1px solid gray; }
+  body .post-body .text-post, body .post-body .photo-post, body .post-body .vedio-post {
+    height: 100px;
+    border: 0px solid red;
+    border-bottom: 1px solid gray; }
+    body .post-body .text-post .post-image, body .post-body .photo-post .post-image, body .post-body .vedio-post .post-image {
+      height: 100px;
+      width: 100px;
+      float: left;
+      border: 0px solid red; }
+    body .post-body .text-post .post-content, body .post-body .photo-post .post-content, body .post-body .vedio-post .post-content {
+      width: 600px;
+      height: 100px;
+      float: left;
+      border: 0px solid black;
+      margin-left: 0%; }
+      body .post-body .text-post .post-content p, body .post-body .photo-post .post-content p, body .post-body .vedio-post .post-content p {
+        font-family: Calibri Light;
+        color: gray; }
+        body .post-body .text-post .post-content p .user-name, body .post-body .photo-post .post-content p .user-name, body .post-body .vedio-post .post-content p .user-name {
+          color: black;
+          font-family: arial; }
+        body .post-body .text-post .post-content p .header-images, body .post-body .text-post .post-content p .header-images2, body .post-body .photo-post .post-content p .header-images, body .post-body .photo-post .post-content p .header-images2, body .post-body .vedio-post .post-content p .header-images, body .post-body .vedio-post .post-content p .header-images2 {
+          margin-left: 15%;
+          border: 0px solid black; }
+        body .post-body .text-post .post-content p .uber-facts, body .post-body .photo-post .post-content p .uber-facts, body .post-body .vedio-post .post-content p .uber-facts {
+          color: #86c8fc;
+          font-weight: bold; }
+  body .post-body .photo-post, body .post-body .vedio-post {
+    height: 300px; }
+body iframe {
+  width: 80%;
+  height: 200px; }
+
+/*# sourceMappingURL=twitterStyle.css.map */
